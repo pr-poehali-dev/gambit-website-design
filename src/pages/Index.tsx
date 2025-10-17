@@ -6,7 +6,7 @@ import Icon from '@/components/ui/icon';
 const Index = () => {
   useEffect(() => {
     const link = document.createElement('link');
-    link.href = 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap';
+    link.href = 'https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap';
     link.rel = 'stylesheet';
     document.head.appendChild(link);
   }, []);
