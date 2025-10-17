@@ -4,49 +4,48 @@
 
 @layer base {
   :root {
-    --background: 220 20% 8%;
-    --foreground: 280 100% 95%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 85%;
 
-    --card: 220 25% 12%;
-    --card-foreground: 280 100% 95%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 85%;
 
-    --popover: 220 25% 12%;
-    --popover-foreground: 280 100% 95%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 85%;
 
-    --primary: 280 80% 70%;
-    --primary-foreground: 220 20% 8%;
+    --primary: 0 85% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 320 85% 65%;
-    --secondary-foreground: 220 20% 8%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 85%;
 
-    --muted: 220 20% 20%;
-    --muted-foreground: 280 30% 70%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 50%;
 
-    --accent: 200 90% 60%;
-    --accent-foreground: 220 20% 8%;
+    --accent: 0 85% 45%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 20% 25%;
-    --input: 220 20% 25%;
-    --ring: 280 80% 70%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 85% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0rem;
 
-    --neon-purple: 280 80% 70%;
-    --neon-pink: 320 85% 65%;
-    --neon-blue: 200 90% 60%;
-    --dark-base: 220 20% 8%;
+    --neon-red: 0 85% 45%;
+    --neon-white: 0 0% 100%;
+    --dark-base: 0 0% 0%;
 
-    --sidebar-background: 220 25% 10%;
-    --sidebar-foreground: 280 100% 95%;
-    --sidebar-primary: 280 80% 70%;
-    --sidebar-primary-foreground: 220 20% 8%;
-    --sidebar-accent: 220 20% 20%;
-    --sidebar-accent-foreground: 280 100% 95%;
-    --sidebar-border: 220 20% 25%;
-    --sidebar-ring: 280 80% 70%;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 85%;
+    --sidebar-primary: 0 85% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 85%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 0 85% 45%;
   }
 }
 
@@ -76,75 +75,26 @@
 @layer utilities {
   .neon-glow {
     text-shadow:
-      0 0 10px #ff00ff,
-      0 0 20px #00ffff,
-      0 0 30px #ff00ff,
-      0 0 40px #00ff00,
-      0 0 50px #ffff00,
-      0 0 60px #ff00ff;
-    animation: rainbow-glow 3s ease-in-out infinite;
-  }
-
-  @keyframes rainbow-glow {
-    0%,
-    100% {
-      text-shadow:
-        0 0 10px #ff00ff,
-        0 0 20px #00ffff,
-        0 0 30px #ff00ff,
-        0 0 40px #00ff00;
-    }
-    25% {
-      text-shadow:
-        0 0 10px #00ffff,
-        0 0 20px #00ff00,
-        0 0 30px #ffff00,
-        0 0 40px #ff00ff;
-    }
-    50% {
-      text-shadow:
-        0 0 10px #00ff00,
-        0 0 20px #ffff00,
-        0 0 30px #ff0000,
-        0 0 40px #00ffff;
-    }
-    75% {
-      text-shadow:
-        0 0 10px #ffff00,
-        0 0 20px #ff00ff,
-        0 0 30px #00ffff,
-        0 0 40px #00ff00;
-    }
+      0 0 10px rgba(220, 38, 38, 0.8),
+      0 0 20px rgba(220, 38, 38, 0.6),
+      0 0 30px rgba(220, 38, 38, 0.4);
+    color: #ffffff;
   }
 
   .neon-border {
     box-shadow:
-      0 0 10px #ff00ff,
-      0 0 20px #00ffff,
-      0 0 30px #00ff00;
-    animation: rainbow-border 3s ease-in-out infinite;
+      0 0 10px rgba(220, 38, 38, 0.5),
+      0 0 20px rgba(220, 38, 38, 0.3),
+      inset 0 0 10px rgba(220, 38, 38, 0.1);
+    border: 1px solid rgba(220, 38, 38, 0.5);
   }
 
-  @keyframes rainbow-border {
-    0%,
-    100% {
-      box-shadow:
-        0 0 10px #ff00ff,
-        0 0 20px #00ffff,
-        0 0 30px #ff00ff;
-    }
-    33% {
-      box-shadow:
-        0 0 10px #00ffff,
-        0 0 20px #00ff00,
-        0 0 30px #ffff00;
-    }
-    66% {
-      box-shadow:
-        0 0 10px #00ff00,
-        0 0 20px #ffff00,
-        0 0 30px #ff00ff;
-    }
+  .opium-gradient {
+    background: linear-gradient(135deg, #000000 0%, #1a0000 50%, #000000 100%);
+  }
+
+  .blood-effect {
+    filter: drop-shadow(0 0 8px rgba(220, 38, 38, 0.6));
   }
 
   .glitch {
@@ -174,12 +124,12 @@
   @keyframes neon-pulse {
     0%,
     100% {
-      filter: drop-shadow(0 0 5px hsl(var(--neon-purple)))
-        drop-shadow(0 0 15px hsl(var(--neon-purple)));
+      filter: drop-shadow(0 0 5px rgba(220, 38, 38, 0.6))
+        drop-shadow(0 0 15px rgba(220, 38, 38, 0.4));
     }
     50% {
-      filter: drop-shadow(0 0 20px hsl(var(--neon-pink)))
-        drop-shadow(0 0 40px hsl(var(--neon-pink)));
+      filter: drop-shadow(0 0 20px rgba(220, 38, 38, 0.8))
+        drop-shadow(0 0 40px rgba(220, 38, 38, 0.5));
     }
   }
 }
