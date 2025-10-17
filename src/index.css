@@ -57,7 +57,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Pacifico", cursive;
+    font-family: "VT323", monospace;
   }
 
   h1,
@@ -66,9 +66,9 @@
   h4,
   h5,
   h6 {
-    font-family: "Pacifico", cursive;
+    font-family: "VT323", monospace;
     font-weight: 400;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
   }
 }
 
