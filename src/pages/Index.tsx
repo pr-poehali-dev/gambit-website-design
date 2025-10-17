@@ -167,6 +167,192 @@ const Index = () => {
           </div>
         </section>
 
+        <section className="container mx-auto px-4 py-20">
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-16 neon-glow">
+            TOKENOMICS
+          </h2>
+          
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+            <Card className="bg-gradient-to-br from-primary/20 to-card/50 backdrop-blur-sm border-primary/30 p-8">
+              <h3 className="text-3xl font-bold mb-6 text-primary">SUPPLY</h3>
+              <div className="space-y-4 text-lg">
+                <div className="flex justify-between items-center border-b border-primary/20 pb-3">
+                  <span className="text-muted-foreground">Total Supply:</span>
+                  <span className="font-bold">1,000,000,000</span>
+                </div>
+                <div className="flex justify-between items-center border-b border-primary/20 pb-3">
+                  <span className="text-muted-foreground">Circulating:</span>
+                  <span className="font-bold text-secondary">850,000,000</span>
+                </div>
+                <div className="flex justify-between items-center border-b border-primary/20 pb-3">
+                  <span className="text-muted-foreground">Burned:</span>
+                  <span className="font-bold text-accent">50,000,000</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-muted-foreground">Locked Liquidity:</span>
+                  <span className="font-bold text-primary">100,000,000</span>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-secondary/20 to-card/50 backdrop-blur-sm border-secondary/30 p-8">
+              <h3 className="text-3xl font-bold mb-6 text-secondary">DISTRIBUTION</h3>
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span>Community (85%)</span>
+                    <span className="font-bold">850M</span>
+                  </div>
+                  <div className="w-full bg-muted rounded-full h-3">
+                    <div className="bg-gradient-to-r from-primary to-secondary h-3 rounded-full" style={{width: '85%'}}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span>Liquidity Pool (10%)</span>
+                    <span className="font-bold">100M</span>
+                  </div>
+                  <div className="w-full bg-muted rounded-full h-3">
+                    <div className="bg-primary h-3 rounded-full" style={{width: '10%'}}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span>Burned (5%)</span>
+                    <span className="font-bold">50M</span>
+                  </div>
+                  <div className="w-full bg-muted rounded-full h-3">
+                    <div className="bg-accent h-3 rounded-full" style={{width: '5%'}}></div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          <div className="max-w-3xl mx-auto mt-12 text-center">
+            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 p-8">
+              <Icon name="Shield" size={48} className="text-accent mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-4 text-accent">ANTI-WHALE PROTECTION</h3>
+              <p className="text-muted-foreground text-lg">
+                Maximum transaction limit: 2% of total supply. No single wallet can dump and crash the price. 
+                Fair distribution ensures sustainable growth for all holders.
+              </p>
+            </Card>
+          </div>
+        </section>
+
+        <section className="container mx-auto px-4 py-20">
+          <h2 className="text-5xl md:text-6xl font-bold text-center mb-16 neon-glow">
+            ROADMAP
+          </h2>
+          
+          <div className="max-w-4xl mx-auto space-y-6">
+            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 p-8 hover:neon-border transition-all">
+              <div className="flex items-start gap-6">
+                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center border-2 border-primary">
+                  <Icon name="Rocket" size={28} className="text-primary" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-2 text-primary">PHASE 1: LAUNCH</h3>
+                  <p className="text-muted-foreground mb-3">Q1 2024 - COMPLETED ✓</p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <Icon name="Check" size={18} className="text-primary" />
+                      Token deployment on blockchain
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Icon name="Check" size={18} className="text-primary" />
+                      Initial liquidity pool creation
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Icon name="Check" size={18} className="text-primary" />
+                      Community building across social platforms
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 p-8 hover:neon-border transition-all">
+              <div className="flex items-start gap-6">
+                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center border-2 border-secondary">
+                  <Icon name="TrendingUp" size={28} className="text-secondary" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-2 text-secondary">PHASE 2: GROWTH</h3>
+                  <p className="text-muted-foreground mb-3">Q2 2024 - IN PROGRESS</p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <Icon name="Check" size={18} className="text-secondary" />
+                      Listings on major DEX platforms
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Icon name="Loader2" size={18} className="text-secondary animate-spin" />
+                      Partnerships with crypto influencers
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Icon name="Loader2" size={18} className="text-secondary animate-spin" />
+                      First major marketing campaign
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 p-8 hover:neon-border transition-all">
+              <div className="flex items-start gap-6">
+                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center border-2 border-accent">
+                  <Icon name="Globe" size={28} className="text-accent" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-2 text-accent">PHASE 3: EXPANSION</h3>
+                  <p className="text-muted-foreground mb-3">Q3-Q4 2024</p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <Icon name="Circle" size={18} className="text-accent" />
+                      Centralized exchange listings (CEX)
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Icon name="Circle" size={18} className="text-accent" />
+                      NFT collection launch for holders
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Icon name="Circle" size={18} className="text-accent" />
+                      Strategic burn events
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 backdrop-blur-sm border-primary/30 p-8 hover:neon-border transition-all">
+              <div className="flex items-start gap-6">
+                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center border-2 border-primary">
+                  <Icon name="Crown" size={28} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold mb-2 neon-glow">PHASE 4: DOMINATION</h3>
+                  <p className="text-muted-foreground mb-3">2025 & BEYOND</p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-center gap-2">
+                      <Icon name="Circle" size={18} className="text-primary" />
+                      Gambit Wallet & DeFi ecosystem
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Icon name="Circle" size={18} className="text-primary" />
+                      Metaverse integration & gaming
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <Icon name="Circle" size={18} className="text-primary" />
+                      Top 100 crypto by market cap
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </section>
+
         <section className="container mx-auto px-4 py-20 text-center">
           <div className="max-w-3xl mx-auto space-y-8">
             <h2 className="text-5xl md:text-6xl font-bold neon-glow mb-6">
