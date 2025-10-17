@@ -12,7 +12,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-foreground overflow-x-hidden relative">
+    <div className="min-h-screen bg-black text-foreground overflow-x-hidden relative grain-texture">
       <div className="fixed inset-0 opacity-10">
         <div className="absolute inset-0" style={{
           backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(220, 38, 38, 0.03) 2px, rgba(220, 38, 38, 0.03) 4px)',
@@ -20,6 +20,7 @@ const Index = () => {
         }}></div>
       </div>
       <div className="fixed inset-0 bg-gradient-to-b from-transparent via-red-950/5 to-black opacity-60"></div>
+      <div className="fixed inset-0 baroque-ornament opacity-5"></div>
 
       <div className="relative z-10">
         <header className="container mx-auto px-4 py-6">
@@ -99,7 +100,9 @@ const Index = () => {
           </h2>
           
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 p-8 hover:neon-border transition-all hover:scale-105">
+            <Card className="bg-card/50 backdrop-blur-sm border-primary/30 p-8 hover:neon-border transition-all hover:scale-105 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
+              <div className="absolute -top-10 -right-10 w-32 h-32 border border-primary/10 rounded-full"></div>
               <div className="mb-4">
                 <Icon name="Zap" size={48} className="text-primary" />
               </div>
@@ -110,7 +113,9 @@ const Index = () => {
               </p>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 p-8 hover:neon-border transition-all hover:scale-105">
+            <Card className="bg-card/50 backdrop-blur-sm border-secondary/30 p-8 hover:neon-border transition-all hover:scale-105 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
+              <div className="absolute -bottom-10 -left-10 w-32 h-32 border border-primary/10 rounded-full"></div>
               <div className="mb-4">
                 <Icon name="TrendingUp" size={48} className="text-secondary" />
               </div>
@@ -121,7 +126,9 @@ const Index = () => {
               </p>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 p-8 hover:neon-border transition-all hover:scale-105">
+            <Card className="bg-card/50 backdrop-blur-sm border-accent/30 p-8 hover:neon-border transition-all hover:scale-105 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
+              <div className="absolute top-1/2 -right-16 w-40 h-40 border border-primary/10 rounded-full"></div>
               <div className="mb-4">
                 <Icon name="Users" size={48} className="text-accent" />
               </div>
